@@ -18,6 +18,9 @@
 		A200DCDB2B095B3500AA5E91 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DCDA2B095B3500AA5E91 /* LoginCoordinator.swift */; };
 		A200DCDE2B095C8800AA5E91 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DCDD2B095C8800AA5E91 /* LoginView.swift */; };
 		A200DCE02B095C9600AA5E91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DCDF2B095C9600AA5E91 /* LoginViewController.swift */; };
+		A200DCE62B099D8100AA5E91 /* logo-login.png in Resources */ = {isa = PBXBuildFile; fileRef = A200DCE32B099D8100AA5E91 /* logo-login.png */; };
+		A200DCE72B099D8100AA5E91 /* logo-login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A200DCE42B099D8100AA5E91 /* logo-login@2x.png */; };
+		A200DCE82B099D8100AA5E91 /* logo-login@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A200DCE52B099D8100AA5E91 /* logo-login@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		A200DCDA2B095B3500AA5E91 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		A200DCDD2B095C8800AA5E91 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A200DCDF2B095C9600AA5E91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A200DCE32B099D8100AA5E91 /* logo-login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-login.png"; sourceTree = "<group>"; };
+		A200DCE42B099D8100AA5E91 /* logo-login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-login@2x.png"; sourceTree = "<group>"; };
+		A200DCE52B099D8100AA5E91 /* logo-login@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-login@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		40E99EE62AFBBB910077AFDF /* appNotifica */ = {
 			isa = PBXGroup;
 			children = (
+				A200DCE12B099C4E00AA5E91 /* Images */,
 				A200DCDC2B095C6A00AA5E91 /* Controller */,
 				A200DCD72B095A9500AA5E91 /* Coordinator */,
 				A200DCD62B0958EA00AA5E91 /* Resources */,
@@ -104,6 +111,24 @@
 				A200DCDF2B095C9600AA5E91 /* LoginViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A200DCE12B099C4E00AA5E91 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A200DCE22B099D0A00AA5E91 /* Logo Branca */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A200DCE22B099D0A00AA5E91 /* Logo Branca */ = {
+			isa = PBXGroup;
+			children = (
+				A200DCE32B099D8100AA5E91 /* logo-login.png */,
+				A200DCE42B099D8100AA5E91 /* logo-login@2x.png */,
+				A200DCE52B099D8100AA5E91 /* logo-login@3x.png */,
+			);
+			path = "Logo Branca";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +189,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A200DCE72B099D8100AA5E91 /* logo-login@2x.png in Resources */,
+				A200DCE62B099D8100AA5E91 /* logo-login.png in Resources */,
+				A200DCE82B099D8100AA5E91 /* logo-login@3x.png in Resources */,
 				40E99EF72AFBBB9D0077AFDF /* LaunchScreen.storyboard in Resources */,
 				40E99EF42AFBBB9D0077AFDF /* Assets.xcassets in Resources */,
 				40E99EEF2AFBBB920077AFDF /* Main.storyboard in Resources */,
