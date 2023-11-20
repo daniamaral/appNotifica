@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class LoginView: UIView {
+    var  onRegisterTap: (() -> Void)?
     //MARK: - Initialize
         override init(frame: CGRect) {
             //chama o frame da superclasse
@@ -44,6 +45,8 @@ class LoginView: UIView {
         self.addSubview(senhaTextField)
         self.addSubview(buttonLogar)
         self.addSubview(buttonRegistrar)
+        
+        buttonRegistrar.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
         
@@ -85,6 +88,11 @@ class LoginView: UIView {
         
         ])
     }
+    
+    @objc private func registerTap(){
+        onRegisterTap?()
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

@@ -18,7 +18,12 @@ class LoginCoordinator: Coordinator{
     
     func start() {
         let viewController = LoginViewController()
-        
+        viewController.viewMain.onRegisterTap = gotoRegisterTap
+        self.navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func gotoRegisterTap(){
+        let viewController = RegisterViewController()
         self.navigationController.pushViewController(viewController, animated: true)
     }
     
