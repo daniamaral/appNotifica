@@ -13,7 +13,11 @@ class LoginViewController: UIViewController{
     
     lazy var loginView: LoginView = {
         let view = LoginView()
-        view.onRegisterTap = self.onRegisterTap
+        //view.onRegisterTap = self.onRegisterTap //forma do professor
+        
+        view.onRegisterTap = { // forma do especialista da ntt data
+            self.onRegisterTap?()
+        }
         
         return view
     }()
