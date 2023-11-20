@@ -9,11 +9,17 @@ import Foundation
 import UIKit
 
 class LoginViewController: UIViewController{
+    var  onRegisterTap: (() -> Void)?
     
-    var viewMain = LoginView()
+    lazy var loginView: LoginView = {
+        let view = LoginView()
+        view.onRegisterTap = self.onRegisterTap
+        
+        return view
+    }()
     
     override func loadView() {
-        self.view = viewMain
+        self.view = loginView
     }
     
     override func viewDidLoad() {
