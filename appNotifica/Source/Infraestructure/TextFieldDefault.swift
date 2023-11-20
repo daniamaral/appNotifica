@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class TextFieldDefault: UITextField{
+class TextFieldDefault: UnderlinedTextField{
     init(text: String) {
         super.init(frame: .zero)
         initTextFieldDefault(text: text)
