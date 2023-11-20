@@ -23,7 +23,7 @@ class LoginView: UIView {
     var imageLogin = ImageDefault(image: "ImageLogin")
     
     //cria a função com as propriadades da label no login
-    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", fontName: "SFProDisplay-Light", fontSize: 16)
+    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", fontName: "SFProDisplay-Light", fontSize: 18)
     
     //cria a função com as propriadades da text no login
     var emailTextField = TextFieldDefault(text: "E-mail")
@@ -50,14 +50,14 @@ class LoginView: UIView {
         
         NSLayoutConstraint.activate([
         
-            imageLogin.widthAnchor.constraint(equalToConstant: 274.99),
+            //imageLogin.widthAnchor.constraint(equalToConstant: 274.99),
             imageLogin.heightAnchor.constraint(equalToConstant: 82.64),
             imageLogin.topAnchor.constraint(equalTo: self.topAnchor, constant: 228),
             imageLogin.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 57),
             imageLogin.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -57),
             
             imageLabel.widthAnchor.constraint(equalToConstant: 100),
-            imageLabel.topAnchor.constraint(equalTo: imageLogin.bottomAnchor, constant: 5),
+            imageLabel.topAnchor.constraint(equalTo: imageLogin.bottomAnchor, constant: 0),
             imageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
             imageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             
