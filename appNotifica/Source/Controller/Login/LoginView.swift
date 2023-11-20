@@ -22,7 +22,7 @@ class LoginView: UIView {
     var imageLogin = ImageDefault(image: "ImageLogin")
     
     //cria a função com as propriadades da label no login
-    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF")
+    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", fontName: "SFProDisplay-Light", fontSize: 16)
     
     //cria a função com as propriadades da text no login
     var emailTextField = TextFieldDefault(text: "E-mail")
