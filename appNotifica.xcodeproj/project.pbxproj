@@ -99,8 +99,8 @@
 		405085332B0B883B00F62A96 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				405085302B0B881D00F62A96 /* RegisterView.swift */,
 				405085342B0B888E00F62A96 /* RegisterViewController.swift */,
+				405085302B0B881D00F62A96 /* RegisterView.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -159,8 +159,8 @@
 		A200DCDC2B095C6A00AA5E91 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				405085332B0B883B00F62A96 /* Register */,
 				405085322B0B882B00F62A96 /* Login */,
+				405085332B0B883B00F62A96 /* Register */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
