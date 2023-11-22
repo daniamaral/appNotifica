@@ -19,6 +19,9 @@ class RegisterView: UIView {
         
     }
     
+    //MARK: - Clousures:
+    var onLoginTap: (() -> Void)?
+    
     //cria a função com as propriadades da label no login
     var imageLabel = LabelDefault(text: "Entre com seu e-mail e senha para se registrar", fontName: "SFProDisplay-Light", fontSize: 20)
     
@@ -44,13 +47,13 @@ class RegisterView: UIView {
         self.addSubview(emailTextField)
         self.addSubview(senhaTextField)
         self.addSubview(confirmarSenhaTextField)
-        self.addSubview(buttonLogar)
         self.addSubview(buttonRegistrar)
+        self.addSubview(buttonLogar)
+        
+        buttonLogar.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
         
-            
-            
             //imageLabel.widthAnchor.constraint(equalToConstant: 342),
             imageLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 188),
             imageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
@@ -90,6 +93,9 @@ class RegisterView: UIView {
         ])
     }
     
+    @objc private func loginTap(){
+        onLoginTap?()
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

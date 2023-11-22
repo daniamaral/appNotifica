@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class LoginView: UIView {
-    var  onRegisterTap: (() -> Void)?
+    
     //MARK: - Initialize
         override init(frame: CGRect) {
             //chama o frame da superclasse
@@ -19,6 +19,10 @@ class LoginView: UIView {
             setupVisualElements()
             
         }
+    
+    //MARK: - Clousures:
+    var  onRegisterTap: (() -> Void)?
+    
     //cria a função com as propriadades da imagem no login
     var imageLogin = ImageDefault(image: "ImageLogin")
     
