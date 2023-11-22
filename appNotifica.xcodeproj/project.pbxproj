@@ -11,6 +11,9 @@
 		405085312B0B881E00F62A96 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405085302B0B881D00F62A96 /* RegisterView.swift */; };
 		405085352B0B888E00F62A96 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405085342B0B888E00F62A96 /* RegisterViewController.swift */; };
 		405085372B0B88F200F62A96 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405085362B0B88F200F62A96 /* RegisterCoordinator.swift */; };
+		407BB31F2B0E46FA0006D5CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407BB31E2B0E46FA0006D5CC /* HomeViewController.swift */; };
+		407BB3212B0E47250006D5CC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407BB3202B0E47250006D5CC /* HomeView.swift */; };
+		407BB3242B0E47A50006D5CC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407BB3232B0E47A50006D5CC /* HomeCoordinator.swift */; };
 		40E99EE82AFBBB910077AFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E99EE72AFBBB910077AFDF /* AppDelegate.swift */; };
 		40E99EEA2AFBBB920077AFDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E99EE92AFBBB910077AFDF /* SceneDelegate.swift */; };
 		40E99EEC2AFBBB920077AFDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E99EEB2AFBBB920077AFDF /* ViewController.swift */; };
@@ -41,6 +44,9 @@
 		405085302B0B881D00F62A96 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		405085342B0B888E00F62A96 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		405085362B0B88F200F62A96 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		407BB31E2B0E46FA0006D5CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		407BB3202B0E47250006D5CC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		407BB3232B0E47A50006D5CC /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		40E99EE42AFBBB910077AFDF /* appNotifica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appNotifica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E99EE72AFBBB910077AFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40E99EE92AFBBB910077AFDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +119,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		407BB31D2B0E46D90006D5CC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				407BB31E2B0E46FA0006D5CC /* HomeViewController.swift */,
+				407BB3202B0E47250006D5CC /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		40E99EDB2AFBBB910077AFDF = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +175,7 @@
 				A200DCD82B095AE600AA5E91 /* Coordinator.swift */,
 				A200DCDA2B095B3500AA5E91 /* LoginCoordinator.swift */,
 				405085362B0B88F200F62A96 /* RegisterCoordinator.swift */,
+				407BB3232B0E47A50006D5CC /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -167,6 +183,7 @@
 		A200DCDC2B095C6A00AA5E91 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				407BB31D2B0E46D90006D5CC /* Home */,
 				405085322B0B882B00F62A96 /* Login */,
 				405085332B0B883B00F62A96 /* Register */,
 			);
@@ -317,6 +334,7 @@
 				40E99EEC2AFBBB920077AFDF /* ViewController.swift in Sources */,
 				40E99EE82AFBBB910077AFDF /* AppDelegate.swift in Sources */,
 				A200DCE02B095C9600AA5E91 /* LoginViewController.swift in Sources */,
+				407BB31F2B0E46FA0006D5CC /* HomeViewController.swift in Sources */,
 				A200DCF22B09A6A300AA5E91 /* LabelDefault.swift in Sources */,
 				405085312B0B881E00F62A96 /* RegisterView.swift in Sources */,
 				A200DCED2B09A69100AA5E91 /* ImageDefault.swift in Sources */,
@@ -328,7 +346,9 @@
 				40E99EF22AFBBB920077AFDF /* appNotifica.xcdatamodeld in Sources */,
 				A200DCF72B09A6F400AA5E91 /* UIColor+.swift in Sources */,
 				40E99EEA2AFBBB920077AFDF /* SceneDelegate.swift in Sources */,
+				407BB3242B0E47A50006D5CC /* HomeCoordinator.swift in Sources */,
 				A200DCF32B09A6A300AA5E91 /* TextFieldDefault.swift in Sources */,
+				407BB3212B0E47250006D5CC /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
