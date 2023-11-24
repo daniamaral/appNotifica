@@ -8,17 +8,9 @@
 import Foundation
 import UIKit
 
-class LoginView: UIView {
+class LoginView: ViewDefault {
     
-    //MARK: - Initialize
-        override init(frame: CGRect) {
-            //chama o frame da superclasse
-            super.init(frame: frame)
-            // muda a cor de fundo do app para branco
-            self.backgroundColor = .viewBackGroundColor
-            setupVisualElements()
-            
-        }
+    
     
     //MARK: - Clousures:
     var onRegisterTap: (() -> Void)?
@@ -31,10 +23,11 @@ class LoginView: UIView {
     var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", fontName: "SFProDisplay-Light", fontSize: 18)
     
     //cria a função com as propriadades da text no login
-    var emailTextField = TextFieldDefault(text: "E-mail")
+    var emailTextField = TextFieldDefault(text: "E-mail", keyBoardType: .emailAddress, returnKeyType: .next, isSecureText: false)
     
     //cria a função com as propriadades da text no login
-    var senhaTextField = TextFieldDefault(text: "Senha")
+    var senhaTextField = TextFieldDefault(text: "Senha", keyBoardType: .default, returnKeyType: .done, isSecureText: true)
+        
     
     //cria a função com as propriadades da butao no logor
     var buttonLogar = ButtonDefault(button: "LOGAR")
@@ -43,11 +36,14 @@ class LoginView: UIView {
     var buttonRegistrar = ButtonDefault(button: "REGISTRAR")
     
     
-    func setupVisualElements() {
+    override func setupVisualElements() {
+        super.setupVisualElements()
         self.addSubview(imageLogin)
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
+        emailTextField.delegate = self
         self.addSubview(senhaTextField)
+        senhaTextField.delegate = self
         self.addSubview(buttonLogar)
         self.addSubview(buttonRegistrar)
         
@@ -103,8 +99,17 @@ class LoginView: UIView {
         onHomeTap?()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
+}
+
+extension LoginView: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (textField == emailTextField) {
+            self.senhaTextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        
+        return true
+    }
 }
