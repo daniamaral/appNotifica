@@ -8,6 +8,21 @@
 import Foundation
 import UIKit
 
-class HomeViewController: UIViewController{
+class HomeViewController: ViewControllerDefault{
     
+    
+    lazy var homeView: HomeView = {
+        let view = HomeView()
+        
+        return view
+    }()
+    
+    override func loadView() {
+        self.view = homeView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Ocorrências"
+    }
 }

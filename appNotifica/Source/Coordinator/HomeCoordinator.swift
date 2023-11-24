@@ -9,5 +9,15 @@ import Foundation
 import UIKit
 
 class HomeCoordinator: Coordinator{
+    var navigationController: UINavigationController
     
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+    
+    func start() {
+        let viewController = HomeViewController()
+        //viewController.onLoginTap = gotoLoginTap
+        self.navigationController.pushViewController(viewController, animated: true)
+    }
 }

@@ -8,8 +8,9 @@
 import Foundation
 import UIKit
 
-class LoginViewController: UIViewController{
-    var  onRegisterTap: (() -> Void)?
+class LoginViewController: ViewControllerDefault{
+    var onRegisterTap: (() -> Void)?
+    var onHomeTap: (() -> Void)?
     
     lazy var loginView: LoginView = {
         let view = LoginView()
@@ -17,6 +18,10 @@ class LoginViewController: UIViewController{
         
         view.onRegisterTap = { // forma do especialista da ntt data
             self.onRegisterTap?()
+        }
+        
+        view.onHomeTap = {
+            self.onHomeTap?()
         }
         
         return view
@@ -29,6 +34,6 @@ class LoginViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Entrar"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
     }
 }
