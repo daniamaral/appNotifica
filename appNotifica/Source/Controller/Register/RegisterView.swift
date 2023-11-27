@@ -10,9 +10,7 @@ import UIKit
 
 class RegisterView: ViewDefault {
     //destruir o view quando não for mais necessário, a fim de economizar memória
-    deinit{
-        print("Destruindo \(type(of:self))")
-    }
+    
     //MARK: - Clousures:
     var onLoginTap: (() -> Void)?
     

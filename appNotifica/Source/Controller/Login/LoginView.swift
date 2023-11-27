@@ -10,9 +10,7 @@ import UIKit
 
 class LoginView: ViewDefault {
     
-    deinit{
-        print("Destruindo \(type(of:self))")
-    }
+    
     
     //MARK: - Clousures:
     var onRegisterTap: (() -> Void)?

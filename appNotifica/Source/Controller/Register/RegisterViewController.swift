@@ -11,9 +11,7 @@ import UIKit
 class RegisterViewController: ViewControllerDefault{
     var  onLoginTap: (() -> Void)?
     
-    deinit{
-        print("Destruindo \(type(of:self))")
-    }
+    
     
     //var viewMain = RegisterView()
     

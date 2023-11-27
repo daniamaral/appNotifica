@@ -12,9 +12,7 @@ class LoginViewController: ViewControllerDefault{
     var onRegisterTap: (() -> Void)?
     var onHomeTap: (() -> Void)?
     
-    deinit{
-        print("Destruindo \(type(of:self))")
-    }
+    
     
     lazy var loginView: LoginView = {
         let view = LoginView()

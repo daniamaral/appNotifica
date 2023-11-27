@@ -10,9 +10,6 @@ import UIKit
 
 class LoginCoordinator: Coordinator{
     
-    deinit{
-        print("Destruindo \(type(of:self))")
-    }
     
     var navigationController: UINavigationController
     
