@@ -6,3 +6,24 @@
 //
 
 import Foundation
+import UIKit
+
+class SobreViewController: ViewControllerDefault{
+    
+    
+    lazy var sobreView: SobreView = {
+        let view = SobreView()
+        
+        return view
+    }()
+    
+    override func loadView() {
+        self.view = sobreView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Sobre o App"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+}

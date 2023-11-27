@@ -6,3 +6,24 @@
 //
 
 import Foundation
+import UIKit
+
+class NovaOcorrenciaViewController: ViewControllerDefault{
+    
+    
+    lazy var novaOcorrenciaView: NovaOcorrenciaView = {
+        let view = NovaOcorrenciaView()
+        
+        return view
+    }()
+    
+    override func loadView() {
+        self.view = novaOcorrenciaView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Nova Ocorrência"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+}

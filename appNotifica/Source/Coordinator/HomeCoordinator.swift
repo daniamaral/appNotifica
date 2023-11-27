@@ -15,9 +15,15 @@ class HomeCoordinator: Coordinator{
         self.navigationController = navigationController
     }
     
-    func start() {
+    lazy var homeViewController: HomeViewController = {
         let viewController = HomeViewController()
-        //viewController.onLoginTap = gotoLoginTap
-        self.navigationController.pushViewController(viewController, animated: true)
+        
+        viewController.tabBarItem.title = "Home"
+        viewController.tabBarItem.image = UIImage(systemName: "homekit")
+        return viewController
+    }()
+    
+    func start() {
+        self.navigationController.pushViewController(homeViewController, animated: true)
     }
 }

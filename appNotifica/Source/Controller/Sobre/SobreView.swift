@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import UIKit
+
+class SobreView: ViewDefault{
+    
+    override func setupVisualElements() {
+        super.setupVisualElements()
+    }
+    
+   
+    
+    
+}
