@@ -9,8 +9,10 @@ import Foundation
 import UIKit
 
 class RegisterView: ViewDefault {
-    
-    
+    //destruir o view quando não for mais necessário, a fim de economizar memória
+    deinit{
+        print("Destruindo \(type(of:self))")
+    }
     //MARK: - Clousures:
     var onLoginTap: (() -> Void)?
     
@@ -35,6 +37,7 @@ class RegisterView: ViewDefault {
     
     override func setupVisualElements() {
         super.setupVisualElements()
+        
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
         emailTextField.delegate = self

@@ -12,16 +12,24 @@ class LoginViewController: ViewControllerDefault{
     var onRegisterTap: (() -> Void)?
     var onHomeTap: (() -> Void)?
     
+    deinit{
+        print("Destruindo \(type(of:self))")
+    }
+    
     lazy var loginView: LoginView = {
         let view = LoginView()
         //view.onRegisterTap = self.onRegisterTap //forma do professor
         
-        view.onRegisterTap = { // forma do especialista da ntt data
-            self.onRegisterTap?()
+        view.onRegisterTap = { [weak self] in    // forma do especialista da ntt data
+            if let self = self{
+                self.onRegisterTap?()
+            }
         }
         
-        view.onHomeTap = {
-            self.onHomeTap?()
+        view.onHomeTap = { [weak self] in   
+            if let self = self{
+                self.onHomeTap?()
+            }
         }
         
         return view

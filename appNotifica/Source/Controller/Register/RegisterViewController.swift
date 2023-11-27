@@ -11,13 +11,19 @@ import UIKit
 class RegisterViewController: ViewControllerDefault{
     var  onLoginTap: (() -> Void)?
     
+    deinit{
+        print("Destruindo \(type(of:self))")
+    }
+    
     //var viewMain = RegisterView()
     
     lazy var registerView: RegisterView = {
         let view = RegisterView()
         
-        view.onLoginTap = {
-            self.onLoginTap?()
+        view.onLoginTap = { [weak self] in
+            if let self = self{
+                self.onLoginTap?()
+            }
         }
         
         return view

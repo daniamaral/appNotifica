@@ -10,6 +10,10 @@ import UIKit
 
 class RegisterCoordinator: Coordinator{
     
+    deinit{
+        print("Destruindo \(type(of:self))")
+    }
+    
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
