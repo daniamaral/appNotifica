@@ -28,7 +28,6 @@ class LoginView: ViewDefault {
     //cria a função com as propriadades da text no login
     var senhaTextField = TextFieldDefault(text: "Senha", keyBoardType: .default, returnKeyType: .done, isSecureText: true)
         
-    
     //cria a função com as propriadades da butao no logor
     var buttonLogar = ButtonDefault(button: "LOGAR")
     

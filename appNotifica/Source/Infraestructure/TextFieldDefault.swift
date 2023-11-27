@@ -10,12 +10,12 @@ import UIKit
 
 class TextFieldDefault: UnderlinedTextField{
     //construtor recebendo apenas o texto do placeholder
-    init(text: String) {
+    /*init(text: String) {
         super.init(frame: .zero)
         initTextFieldDefault(text: text, keyBoardType: .default, returnKeyType: .default, isSecureText: false)
-    }
+    }*/
     //contrutor recebendo mais informações sobre o tipo de teclado e a tecla de retorno
-    init(text: String, keyBoardType: UIKeyboardType, returnKeyType: UIReturnKeyType, isSecureText: Bool) {
+    init(text: String, keyBoardType: UIKeyboardType = .default, returnKeyType: UIReturnKeyType = .default, isSecureText: Bool = false) {
         super.init(frame: .zero)
         initTextFieldDefault(text: text, keyBoardType: keyBoardType, returnKeyType: returnKeyType, isSecureText: isSecureText)
     }
