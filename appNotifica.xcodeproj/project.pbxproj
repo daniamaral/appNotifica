@@ -14,6 +14,9 @@
 		407BB31F2B0E46FA0006D5CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407BB31E2B0E46FA0006D5CC /* HomeViewController.swift */; };
 		407BB3212B0E47250006D5CC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407BB3202B0E47250006D5CC /* HomeView.swift */; };
 		407BB3242B0E47A50006D5CC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407BB3232B0E47A50006D5CC /* HomeCoordinator.swift */; };
+		4088CC692B176A8C00A2E89F /* imagemCamera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4088CC662B176A8C00A2E89F /* imagemCamera@3x.png */; };
+		4088CC6A2B176A8C00A2E89F /* imagemCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 4088CC672B176A8C00A2E89F /* imagemCamera.png */; };
+		4088CC6B2B176A8C00A2E89F /* imagemCamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4088CC682B176A8C00A2E89F /* imagemCamera@2x.png */; };
 		408CA87C2B10DB1300F0630E /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408CA87B2B10DB1200F0630E /* ViewControllerDefault.swift */; };
 		408CA87E2B10DEA700F0630E /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408CA87D2B10DEA700F0630E /* ViewDefault.swift */; };
 		40AD592E2B14D51800708CE6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD592D2B14D51800708CE6 /* TabBarController.swift */; };
@@ -57,6 +60,9 @@
 		407BB31E2B0E46FA0006D5CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		407BB3202B0E47250006D5CC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		407BB3232B0E47A50006D5CC /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		4088CC662B176A8C00A2E89F /* imagemCamera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imagemCamera@3x.png"; sourceTree = "<group>"; };
+		4088CC672B176A8C00A2E89F /* imagemCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagemCamera.png; sourceTree = "<group>"; };
+		4088CC682B176A8C00A2E89F /* imagemCamera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imagemCamera@2x.png"; sourceTree = "<group>"; };
 		408CA87B2B10DB1200F0630E /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 		408CA87D2B10DEA700F0630E /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
 		40AD592D2B14D51800708CE6 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -146,6 +152,16 @@
 				407BB3202B0E47250006D5CC /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		4088CC652B176A4D00A2E89F /* Imagem Camera */ = {
+			isa = PBXGroup;
+			children = (
+				4088CC672B176A8C00A2E89F /* imagemCamera.png */,
+				4088CC682B176A8C00A2E89F /* imagemCamera@2x.png */,
+				4088CC662B176A8C00A2E89F /* imagemCamera@3x.png */,
+			);
+			path = "Imagem Camera";
 			sourceTree = "<group>";
 		};
 		40AD592A2B14D48800708CE6 /* NovaOcorrencia */ = {
@@ -278,6 +294,7 @@
 		A200DCFA2B09A85D00AA5E91 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4088CC652B176A4D00A2E89F /* Imagem Camera */,
 				4050852D2B0B83DA00F62A96 /* Logo App */,
 				A200DCFC2B09A87E00AA5E91 /* Logo Branca */,
 				A200DCFB2B09A87500AA5E91 /* Logo Preta */,
@@ -366,12 +383,15 @@
 				40E99EF72AFBBB9D0077AFDF /* LaunchScreen.storyboard in Resources */,
 				A200DD082B09A94E00AA5E91 /* logo-login.png in Resources */,
 				A200DD002B09A94000AA5E91 /* logo-login-dark@2x.png in Resources */,
+				4088CC6B2B176A8C00A2E89F /* imagemCamera@2x.png in Resources */,
 				A200DD062B09A94E00AA5E91 /* logo-login@3x.png in Resources */,
+				4088CC6A2B176A8C00A2E89F /* imagemCamera.png in Resources */,
 				4050852F2B0B845000F62A96 /* icone.png in Resources */,
 				40E99EF42AFBBB9D0077AFDF /* Assets.xcassets in Resources */,
 				A200DD012B09A94000AA5E91 /* logo-login-dark@3x.png in Resources */,
 				A200DD072B09A94E00AA5E91 /* logo-login@2x.png in Resources */,
 				A200DD022B09A94000AA5E91 /* logo-login-dark.png in Resources */,
+				4088CC692B176A8C00A2E89F /* imagemCamera@3x.png in Resources */,
 				40E99EEF2AFBBB920077AFDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

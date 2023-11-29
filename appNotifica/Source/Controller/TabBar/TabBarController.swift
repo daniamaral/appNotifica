@@ -15,7 +15,7 @@ class TabBarController: UITabBarController{
         self.tabBar.tintColor = .buttonBackGroundColor
         self.tabBar.isTranslucent = true
         UITabBar.appearance().barTintColor = .viewBackGroundColor
-        self.navigationItem.setHidesBackButton(true, animated: false)
+        //self.navigationItem.setHidesBackButton(true, animated: false)
     }
     
 }
