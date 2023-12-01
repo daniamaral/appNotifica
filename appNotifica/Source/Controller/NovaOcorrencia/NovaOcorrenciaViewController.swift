@@ -14,10 +14,12 @@ class NovaOcorrenciaViewController: ViewControllerDefault{
     lazy var novaOcorrenciaView: NovaOcorrenciaView = {
         let view = NovaOcorrenciaView()
         
-        view.onCameraTap = { [weak self] in
-            if let self = self{
-                self.onCameraTap?()
+        view.onCameraTap = {
+            EscolherImagem().selecionadorImagem(self){ imagem in
+                NovaOcorrenciaView.setImage(image: imagem)
             }
+               
+            
         }
         
         return view
