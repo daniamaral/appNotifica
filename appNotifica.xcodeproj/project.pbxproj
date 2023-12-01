@@ -43,7 +43,7 @@
 		A200DCF22B09A6A300AA5E91 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DCEF2B09A6A300AA5E91 /* LabelDefault.swift */; };
 		A200DCF32B09A6A300AA5E91 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DCF02B09A6A300AA5E91 /* TextFieldDefault.swift */; };
 		A200DCF72B09A6F400AA5E91 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DCF52B09A6F400AA5E91 /* UIColor+.swift */; };
-		A200DCF82B09A6F400AA5E91 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DCF62B09A6F400AA5E91 /* UITextField+.swift */; };
+		A200DCF82B09A6F400AA5E91 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DCF62B09A6F400AA5E91 /* UnderlinedTextField.swift */; };
 		A200DD002B09A94000AA5E91 /* logo-login-dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A200DCFD2B09A94000AA5E91 /* logo-login-dark@2x.png */; };
 		A200DD012B09A94000AA5E91 /* logo-login-dark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A200DCFE2B09A94000AA5E91 /* logo-login-dark@3x.png */; };
 		A200DD022B09A94000AA5E91 /* logo-login-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = A200DCFF2B09A94000AA5E91 /* logo-login-dark.png */; };
@@ -91,7 +91,7 @@
 		A200DCEF2B09A6A300AA5E91 /* LabelDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 		A200DCF02B09A6A300AA5E91 /* TextFieldDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 		A200DCF52B09A6F400AA5E91 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		A200DCF62B09A6F400AA5E91 /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		A200DCF62B09A6F400AA5E91 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		A200DCFD2B09A94000AA5E91 /* logo-login-dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-login-dark@2x.png"; sourceTree = "<group>"; };
 		A200DCFE2B09A94000AA5E91 /* logo-login-dark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-login-dark@3x.png"; sourceTree = "<group>"; };
 		A200DCFF2B09A94000AA5E91 /* logo-login-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-login-dark.png"; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		405085382B0BA0E600F62A96 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A200DCF62B09A6F400AA5E91 /* UITextField+.swift */,
+				A200DCF62B09A6F400AA5E91 /* UnderlinedTextField.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -419,7 +419,7 @@
 				A200DCED2B09A69100AA5E91 /* ImageDefault.swift in Sources */,
 				A200DCD92B095AE600AA5E91 /* Coordinator.swift in Sources */,
 				A200DCF12B09A6A300AA5E91 /* ButtonDefault.swift in Sources */,
-				A200DCF82B09A6F400AA5E91 /* UITextField+.swift in Sources */,
+				A200DCF82B09A6F400AA5E91 /* UnderlinedTextField.swift in Sources */,
 				408CA87E2B10DEA700F0630E /* ViewDefault.swift in Sources */,
 				40AD59322B14D58F00708CE6 /* NovaOcorrenciaView.swift in Sources */,
 				405085352B0B888E00F62A96 /* RegisterViewController.swift in Sources */,

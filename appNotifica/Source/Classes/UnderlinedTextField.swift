@@ -1,5 +1,5 @@
 //
-//  UITextField+.swift
+//  UnderlinedTextField+.swift
 //  AppNotifica
 //
 //  Created by IFB-BIOTIC-17 on 17/11/23.
@@ -14,7 +14,7 @@ extension UITextField {
 class UnderlinedTextField: UITextField{
     let underlineLayer = CALayer()
     
-    /// Size the underline layer and position it as a one point line under the text field.
+    // Definição do tamanho da underline e posicionamento, feito 1 ponto abaixo do textfield
         func setupUnderlineLayer() {
             var frame = self.bounds
             frame.origin.y = frame.size.height - 1
@@ -24,20 +24,20 @@ class UnderlinedTextField: UITextField{
             underlineLayer.backgroundColor = UIColor.lightGray.cgColor
         }
 
-        // In `init?(coder:)` Add our underlineLayer as a sublayer of the view's main layer
+        // Adicionar a underline como subcamada da camada principal do view
         required init?(coder: NSCoder) {
             super.init(coder: coder)
             self.layer.addSublayer(underlineLayer)
         }
 
-        // in `init(frame:)` Add our underlineLayer as a sublayer of the view's main layer
+        // Adicionar a underline como subcamada da camada principal do view
         override init(frame: CGRect) {
             super.init(frame: frame)
             self.layer.addSublayer(underlineLayer)
         }
 
-        // Any time we are asked to update our subviews,
-        // adjust the size and placement of the underline layer too
+        // Atualizar a subview quando a view for atualizada, também corrigindo suas dimensões
+        
         override func layoutSubviews() {
             super.layoutSubviews()
             setupUnderlineLayer()
