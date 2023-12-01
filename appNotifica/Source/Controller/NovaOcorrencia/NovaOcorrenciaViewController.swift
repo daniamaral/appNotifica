@@ -9,10 +9,16 @@ import Foundation
 import UIKit
 
 class NovaOcorrenciaViewController: ViewControllerDefault{
-    
+    var onCameraTap: (() -> Void)?
     
     lazy var novaOcorrenciaView: NovaOcorrenciaView = {
         let view = NovaOcorrenciaView()
+        
+        view.onCameraTap = { [weak self] in
+            if let self = self{
+                self.onCameraTap?()
+            }
+        }
         
         return view
     }()

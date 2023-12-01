@@ -10,10 +10,16 @@ import UIKit
 
 class NovaOcorrenciaView: ViewDefault{
     
+    var onCameraTap : (() -> Void)?
+    
     lazy var imagemCamera: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(named: "imagemCamera")
         view.translatesAutoresizingMaskIntoConstraints = false
+        
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(cameraTap))
+        view.addGestureRecognizer(tapGR)
+        view.isUserInteractionEnabled = true
         
         return view
     }()
@@ -83,7 +89,9 @@ class NovaOcorrenciaView: ViewDefault{
         ])
     }
     
-   
+    @objc private func cameraTap(){
+        self.onCameraTap?()
+    }
     
     
 }
@@ -104,5 +112,6 @@ extension NovaOcorrenciaView: UITextFieldDelegate{
         
         return true
     }
+
 }
 
