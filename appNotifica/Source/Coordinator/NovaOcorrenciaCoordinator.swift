@@ -17,7 +17,7 @@ class NovaOcorrenciaCoordinator: Coordinator{
     
     lazy var novaOcorrenciaViewController: NovaOcorrenciaViewController = {
         let viewController = NovaOcorrenciaViewController()
-        viewController.onCameraTap = gotoCameraTap
+        
         viewController.tabBarItem.title = "Nova Ocorrência"
         viewController.tabBarItem.image = UIImage(systemName: "note.text.badge.plus")
         return viewController
@@ -29,9 +29,5 @@ class NovaOcorrenciaCoordinator: Coordinator{
         self.navigationController.pushViewController(novaOcorrenciaViewController, animated: true)
     }
     
-    private func gotoCameraTap(){
-        let coordinator = TabBarCoordinator(navigationController: navigationController)
-        coordinator.start()
-        
-    }
+    
 }

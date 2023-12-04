@@ -9,17 +9,14 @@ import Foundation
 import UIKit
 
 class NovaOcorrenciaViewController: ViewControllerDefault{
-    var onCameraTap: (() -> Void)?
     
     lazy var novaOcorrenciaView: NovaOcorrenciaView = {
         let view = NovaOcorrenciaView()
         
-        view.onCameraTap = {
+        view.onCameraTap = { 
             EscolherImagem().selecionadorImagem(self){ imagem in
-                NovaOcorrenciaView.setImage(image: imagem)
+            view.setImage(imagem)
             }
-               
-            
         }
         
         return view

@@ -25,6 +25,13 @@ class NovaOcorrenciaView: ViewDefault{
     }()
     
     lazy var titleTextField = TextFieldDefault(text: "Título", keyBoardType: .default, returnKeyType: .next)
+    /*lazy var underline1: UIView = {
+        let line = UIView()
+        line.layer.borderColor = UIColor.red.cgColor
+        line.layer.borderWidth = 1
+        
+        return line
+    }()*/
     lazy var descriptionTextField = TextFieldDefault(text: "Descrição", keyBoardType: .default, returnKeyType: .next)
     lazy var localizationTextField = TextFieldDefault(text: "Localização", keyBoardType: .default, returnKeyType: .next)
     lazy var dataTextField = TextFieldDefault(text: "Data", keyBoardType: .default, returnKeyType: .next)
@@ -35,6 +42,7 @@ class NovaOcorrenciaView: ViewDefault{
         super.setupVisualElements()
         self.addSubview(imagemCamera)
         self.addSubview(titleTextField)
+        //self.addSubview(underline1)
         self.addSubview(descriptionTextField)
         self.addSubview(localizationTextField)
         self.addSubview(dataTextField)
@@ -55,10 +63,16 @@ class NovaOcorrenciaView: ViewDefault{
             imagemCamera.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15),
             imagemCamera.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15),
             
+            
             titleTextField.heightAnchor.constraint(equalToConstant: 44),
             titleTextField.topAnchor.constraint(equalTo: imagemCamera.bottomAnchor, constant: 20),
             titleTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15),
             titleTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15),
+            
+//            underline1.topAnchor.constraint(equalTo: titleTextField.bottomAnchor, constant: 5),
+//            underline1.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15),
+//            underline1.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15),
+//            underline1.heightAnchor.constraint(equalToConstant: 1),
             
             descriptionTextField.heightAnchor.constraint(equalToConstant: 44),
             descriptionTextField.topAnchor.constraint(equalTo: titleTextField.bottomAnchor, constant: 20),
@@ -91,6 +105,10 @@ class NovaOcorrenciaView: ViewDefault{
     
     @objc private func cameraTap(){
         self.onCameraTap?()
+    }
+    
+    func setImage(_ image: UIImage){
+        self.imagemCamera.image = image
     }
     
     
