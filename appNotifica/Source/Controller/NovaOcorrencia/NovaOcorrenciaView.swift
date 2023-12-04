@@ -99,7 +99,7 @@ class NovaOcorrenciaView: ViewDefault{
             saveButton.heightAnchor.constraint(equalToConstant: 50),
             saveButton.topAnchor.constraint(equalTo: statusTextField.bottomAnchor, constant: 25),
             saveButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 35),
-            saveButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -3)
+            saveButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -35)
         
         ])
     }

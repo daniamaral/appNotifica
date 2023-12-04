@@ -25,7 +25,7 @@ class LabelDefault: UILabel{
         }
         //self.font = UIFont(name: "SFProDisplay-Light", size: fontSize)
         self.numberOfLines = 0 //ele usará quantas linhas forem necessárias
-        self.textAlignment = .center
+        self.textAlignment = .justified
         self.translatesAutoresizingMaskIntoConstraints = false
     }
     

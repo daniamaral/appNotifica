@@ -59,8 +59,8 @@ class LoginView: ViewDefault {
             
             imageLabel.widthAnchor.constraint(equalToConstant: 100),
             imageLabel.topAnchor.constraint(equalTo: imageLogin.bottomAnchor, constant: 0),
-            imageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
-            imageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            imageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
+            imageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -25),
             
             emailTextField.widthAnchor.constraint(equalToConstant: 374),
             emailTextField.heightAnchor.constraint(equalToConstant: 60),
