@@ -25,13 +25,14 @@ class NovaOcorrenciaView: ViewDefault{
     }()
     
     lazy var titleTextField = TextFieldDefault(text: "Título", keyBoardType: .default, returnKeyType: .next)
-    /*lazy var underline1: UIView = {
-        let line = UIView()
-        line.layer.borderColor = UIColor.red.cgColor
-        line.layer.borderWidth = 1
-        
-        return line
-    }()*/
+//    lazy var underline1: UIView = {
+//        let line = UIView()
+//        line.layer.borderColor = UIColor.red.cgColor
+//        line.layer.borderWidth = 1
+//        line.translatesAutoresizingMaskIntoConstraints = false
+//        
+//        return line
+//    }()
     lazy var descriptionTextField = TextFieldDefault(text: "Descrição", keyBoardType: .default, returnKeyType: .next)
     lazy var localizationTextField = TextFieldDefault(text: "Localização", keyBoardType: .default, returnKeyType: .next)
     lazy var dataTextField = TextFieldDefault(text: "Data", keyBoardType: .default, returnKeyType: .next)
