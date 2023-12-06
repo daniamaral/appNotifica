@@ -9,14 +9,15 @@ import Foundation
 import UIKit
 
 class LabelDefault: UILabel{
-    init(text: String, fontName: String, fontSize: CGFloat) {
+    init(text: String, fontName: String, fontSize: CGFloat, fontColor: UIColor = .gray/*UIColor(red: 0.541, green: 0.541, blue: 0.557, alpha: 1)*/) {
         super.init(frame: .zero)
-        initLabelDefault(text: text, fontName: fontName, fontSize: fontSize)
+        initLabelDefault(text: text, fontName: fontName, fontSize: fontSize, fontColor: fontColor)
     }
     
-    private func initLabelDefault(text: String, fontName: String, fontSize: CGFloat){
+    private func initLabelDefault(text: String, fontName: String, fontSize: CGFloat, fontColor: UIColor){
         self.text = text
-        self.textColor = UIColor(red: 0.541, green: 0.541, blue: 0.557, alpha: 1)
+        
+        self.textColor = fontColor
         
         if let font = UIFont(name: fontName, size: fontSize){
             self.font = font

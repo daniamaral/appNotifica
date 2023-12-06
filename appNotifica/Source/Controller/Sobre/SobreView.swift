@@ -12,11 +12,11 @@ class SobreView: ViewDefault{
     
     var imageSobre = ImageDefault(image: "ImageLogin")
     
-    var sobreLabel = LabelDefault(text: "Aplicativo desenvolvido pelos professores do curso Desenvolvimento de aplicativos utilizando a linguagem Swift do IFB com intuito de permitir que ocorrências sejam registradas e acompanhadas, bem como solucionadas.", fontName: "SFProDisplay-Light", fontSize: 15)
+    var sobreLabel = LabelDefault(text: "Aplicativo desenvolvido pelos professores do curso Desenvolvimento de aplicativos utilizando a linguagem Swift do IFB com intuito de permitir que ocorrências sejam registradas e acompanhadas, bem como solucionadas.", fontName: "SFProDisplay-Light", fontSize: 15, fontColor: UIColor(red: 0, green: 0, blue: 0, alpha: 1))
     
-    var desenvolvedoresLabel = LabelDefault(text: "Desenvolvedores", fontName: "SFProDisplay-Bold", fontSize: 15)
+    var desenvolvedoresLabel = LabelDefault(text: "Desenvolvedores", fontName: "SFProDisplay-Bold", fontSize: 15, fontColor: UIColor(red: 0, green: 0, blue: 0, alpha: 1))
     
-    var nomesLabel = LabelDefault(text: "Caio Moura Daoud\nDiógenes Ferreira Reis Fustinoni\nFábio Ferraz Fernandez\nHeitor José dos Santos Barros\nJosé Dario Pintor da Silva\nTiago Henrique Faccio Segato\nDaniel Amaral Ribeiro", fontName: "SFProDisplay-Light", fontSize: 15)
+    var nomesLabel = LabelDefault(text: "Caio Moura Daoud\nDiógenes Ferreira Reis Fustinoni\nFábio Ferraz Fernandez\nHeitor José dos Santos Barros\nJosé Dario Pintor da Silva\nTiago Henrique Faccio Segato\nDaniel Amaral Ribeiro", fontName: "SFProDisplay-Light", fontSize: 15, fontColor: UIColor(red: 0, green: 0, blue: 0, alpha: 1))
     
     override func setupVisualElements() {
         super.setupVisualElements()
