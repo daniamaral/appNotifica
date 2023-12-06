@@ -16,7 +16,8 @@ class HomeCoordinator: Coordinator{
     }
     
     lazy var homeViewController: HomeViewController = {
-        let viewController = HomeViewController()
+        let viewModel = HomeViewModel(coordinator: self)
+        let viewController = HomeViewController(viewModel: viewModel)
         
         viewController.tabBarItem.title = "Home"
         viewController.tabBarItem.image = UIImage(systemName: "homekit")
@@ -24,6 +25,14 @@ class HomeCoordinator: Coordinator{
     }()
     
     func start() {
-        self.navigationController.pushViewController(homeViewController, animated: true)
+        self.navigationController.setViewControllers([homeViewController], animated: false)
+    }
+    
+    func presentNovaOcorrencia(){
+        let viewModel = NovaOcorrenciaViewModel(coordinator: self)
+        let viewController = NovaOcorrenciaViewController(viewModel: viewModel)
+        let navigationNovaOcorrencia = UINavigationController(rootViewController: viewController)
+        
+        navigationController.present(navigationNovaOcorrencia, animated: true)
     }
 }

@@ -27,6 +27,8 @@
 		40AD59382B14D5EC00708CE6 /* SobreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD59372B14D5EC00708CE6 /* SobreCoordinator.swift */; };
 		40AD593A2B14D60A00708CE6 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD59392B14D60A00708CE6 /* TabBarCoordinator.swift */; };
 		40AD593C2B14D63100708CE6 /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD593B2B14D63100708CE6 /* NovaOcorrenciaCoordinator.swift */; };
+		40DCD72D2B209EF7004B56E7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCD72C2B209EF6004B56E7 /* HomeViewModel.swift */; };
+		40DCD72F2B209F37004B56E7 /* NovaOcorrenciaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCD72E2B209F37004B56E7 /* NovaOcorrenciaViewModel.swift */; };
 		40DD21BF2B1A21EE00AA6790 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DD21BE2B1A21EE00AA6790 /* EscolherImagem.swift */; };
 		40E99EE82AFBBB910077AFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E99EE72AFBBB910077AFDF /* AppDelegate.swift */; };
 		40E99EEA2AFBBB920077AFDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E99EE92AFBBB910077AFDF /* SceneDelegate.swift */; };
@@ -74,6 +76,8 @@
 		40AD59372B14D5EC00708CE6 /* SobreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreCoordinator.swift; sourceTree = "<group>"; };
 		40AD59392B14D60A00708CE6 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		40AD593B2B14D63100708CE6 /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
+		40DCD72C2B209EF6004B56E7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		40DCD72E2B209F37004B56E7 /* NovaOcorrenciaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaViewModel.swift; sourceTree = "<group>"; };
 		40DD21BE2B1A21EE00AA6790 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 		40E99EE42AFBBB910077AFDF /* appNotifica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appNotifica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E99EE72AFBBB910077AFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			children = (
 				407BB31E2B0E46FA0006D5CC /* HomeViewController.swift */,
 				407BB3202B0E47250006D5CC /* HomeView.swift */,
+				40DCD72C2B209EF6004B56E7 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				40AD59332B14D5A400708CE6 /* NovaOcorrenciaViewController.swift */,
 				40AD59312B14D58F00708CE6 /* NovaOcorrenciaView.swift */,
 				40DD21BE2B1A21EE00AA6790 /* EscolherImagem.swift */,
+				40DCD72E2B209F37004B56E7 /* NovaOcorrenciaViewModel.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 				40AD59382B14D5EC00708CE6 /* SobreCoordinator.swift in Sources */,
 				A200DCDB2B095B3500AA5E91 /* LoginCoordinator.swift in Sources */,
 				A200DCDE2B095C8800AA5E91 /* LoginView.swift in Sources */,
+				40DCD72D2B209EF7004B56E7 /* HomeViewModel.swift in Sources */,
 				40E99EEC2AFBBB920077AFDF /* ViewController.swift in Sources */,
 				40E99EE82AFBBB910077AFDF /* AppDelegate.swift in Sources */,
 				40AD593A2B14D60A00708CE6 /* TabBarCoordinator.swift in Sources */,
@@ -418,6 +425,7 @@
 				A200DCF22B09A6A300AA5E91 /* LabelDefault.swift in Sources */,
 				405085312B0B881E00F62A96 /* RegisterView.swift in Sources */,
 				40AD59302B14D55500708CE6 /* SobreView.swift in Sources */,
+				40DCD72F2B209F37004B56E7 /* NovaOcorrenciaViewModel.swift in Sources */,
 				40AD59342B14D5A400708CE6 /* NovaOcorrenciaViewController.swift in Sources */,
 				A200DCED2B09A69100AA5E91 /* ImageDefault.swift in Sources */,
 				A200DCD92B095AE600AA5E91 /* Coordinator.swift in Sources */,

@@ -19,14 +19,23 @@ class TabBarCoordinator: Coordinator{
     
     func start() {
         let tabBarController = TabBarController()
+        tabBarController.modalPresentationStyle = .overFullScreen
         
-        let homeViewCoordinator = HomeCoordinator(navigationController: self.navigationController)
-        let novaOcorrenciaViewCoordinator = NovaOcorrenciaCoordinator(navigationController: self.navigationController)
-        let sobreViewCoordinator = SobreCoordinator(navigationController: self.navigationController)
+        let homeNavigation = UINavigationController()
+        let homeViewCoordinator = HomeCoordinator(navigationController: homeNavigation)
+        homeViewCoordinator.start()
         
-        tabBarController.setViewControllers([homeViewCoordinator.homeViewController, novaOcorrenciaViewCoordinator.novaOcorrenciaViewController, sobreViewCoordinator.sobreViewController], animated: true)
+        //let novaOcorrenciaViewCoordinator = NovaOcorrenciaCoordinator(navigationController: self.navigationController)
         
-        self.navigationController.pushViewController(tabBarController, animated: true)
+        let sobreNavigation = UINavigationController()
+        let sobreViewCoordinator = SobreCoordinator(navigationController: sobreNavigation)
+        sobreViewCoordinator.start()
+        
+        //let sobreViewCoordinator = SobreCoordinator(navigationController: self.navigationController)
+        let navigationControllers = [homeNavigation, sobreNavigation]
+        tabBarController.setViewControllers(navigationControllers, animated: true)
+        
+        self.navigationController.present(tabBarController, animated: true)
         
     }
 }

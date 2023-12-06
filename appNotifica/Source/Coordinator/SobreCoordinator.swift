@@ -26,6 +26,6 @@ class SobreCoordinator: Coordinator{
     func start() {
         
         //viewController.onLoginTap = gotoLoginTap
-        self.navigationController.pushViewController(sobreViewController, animated: true)
+        self.navigationController.setViewControllers([sobreViewController], animated: false)
     }
 }
